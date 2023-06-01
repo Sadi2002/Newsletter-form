@@ -30,6 +30,7 @@ body {
           align-items: center;
   height: 100vh;
   background-color: #36384e;
+  position: relative;
 }
 
 .container {
@@ -121,6 +122,10 @@ body {
 
 .container__right-side img {
   height: 100%;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0 30px 30px 0;
 }
 
 .email-label {
@@ -167,5 +172,100 @@ body {
 .submit:hover {
   background: -webkit-gradient(linear, left top, right top, from(#ff6257), to(#dc84d5));
   background: linear-gradient(to right, #ff6257, #dc84d5);
+}
+
+@media (max-width: 991px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding: 0;
+    width: 700px;
+    height: 1000px;
+  }
+  .container__right-side {
+    width: 100%;
+    height: auto;
+  }
+  .container__right-side img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 30px 30px 40px;
+  }
+  .container__left-side {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-top: 50px;
+  }
+  .container__left-side__title {
+    width: 100%;
+  }
+  .email-text,
+  .submit {
+    height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container__left-side__title {
+    font-size: 4rem;
+  }
+  .submit {
+    font-size: 14px;
+  }
+}
+
+.container-success {
+  background-color: #fff;
+  width: 500px;
+  height: 500px;
+  border-radius: 40px;
+  padding: 50px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.container-success img {
+  width: 100px;
+}
+
+.container-success__title {
+  font-size: 30px;
+}
+
+.container-success__text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.fa-times {
+  font-size: 30px;
+  position: absolute;
+  right: 50px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.email {
+  color: green;
+}
+
+.hide {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
