@@ -1,0 +1,99 @@
+.container {
+  width: 1000px;
+  height: 600px;
+  background-color: $White;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      color: $Dark-Slate-Grey;
+      font-size: 6rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    &__text {
+      color: $Charcoal-Grey;
+      font-size: 20px;
+      margin: 0 auto;
+      width: 78%;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+
+  &__list__box {
+    display: flex;
+    align-items: center;
+    width: 78%;
+    margin: 0 auto;
+    gap: 10px;
+
+    & p {
+      font-size: 17px;
+      color: $Charcoal-Grey;
+    }
+  }
+
+  &__right-side {
+    display: flex;
+    width: 50%;
+    height: 560px;
+    justify-content: flex-end;
+  }
+  &__right-side img {
+    height: 100%;
+  }
+}
+
+.email-label {
+  width: 78%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.email-text {
+  width: 78%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid $Grey;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.submit {
+  width: 78%;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient($Dark-Slate-Grey);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  background: linear-gradient(to right, $Tomato, rgb(220, 132, 213));
+}
