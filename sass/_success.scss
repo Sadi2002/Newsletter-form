@@ -42,6 +42,18 @@
 
 @media (max-width: 500px) {
   .container-success {
+    width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-success {
+    width: 330px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-success {
     width: 300px;
   }
 }
